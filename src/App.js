@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from "react";
 import "./App.css";
 
-import StartScreen from "./components/StartScreen";
-import Game from "./components/Game";
-import GameOver from "./components/GameOver";
+import StartScreen from "./pages/StartScreen";
+import Game from "./pages/Game";
+import GameOver from "./pages/GameOver";
 
 import { wordsList } from "./data/words";
 

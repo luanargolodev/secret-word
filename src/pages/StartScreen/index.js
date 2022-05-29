@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { Button } from "../Button";
+import { Button } from "../../components/Button";
 
 const StartScreen = ({ startGame }) => {
   return (

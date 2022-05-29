@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import "./styles.css";
 
-import { Button } from "../Button";
+import { Button } from "../../components/Button";
 
 const Game = ({
   verifyLetter,
