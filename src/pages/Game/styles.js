@@ -67,4 +67,12 @@ export const LetterContainer = styled.div`
 
 export const WrongLettersContainer = styled.div`
   margin-bottom: 2em;
+
+  span {
+    background: #ccc;
+    padding: 0.5em;
+    border-radius: 5px;
+    color: #000;
+    margin-left: 0.5em;
+  }
 `;
