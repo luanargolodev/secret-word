@@ -1,11 +1,12 @@
 import "./styles.css";
 
 import { Button } from "../../components/Button";
+import { Title } from "../../components/Title";
 
 const GameOver = ({ retry, score }) => {
   return (
     <div>
-      <h1>Fim de jogo!</h1>
+      <Title>Fim de jogo!</Title>
       <h2>
         A sua pontuação foi: <span>{score}</span>
       </h2>

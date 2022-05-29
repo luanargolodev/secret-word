@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import {
-  Titulo,
   Score,
   Tip,
   WordContainer,
@@ -9,6 +8,7 @@ import {
   LetterContainer,
 } from "./styles";
 
+import { Title } from "../../components/Title";
 import { Button } from "../../components/Button";
 
 const Game = ({
@@ -37,7 +37,7 @@ const Game = ({
       <p>
         Pontuação: <Score>{score}</Score>
       </p>
-      <Titulo>Adivinhe a palavra: </Titulo>
+      <Title>Adivinhe a palavra: </Title>
       <h3>
         Dica sobre a palavra: <Tip>{pickedCategory}</Tip>
       </h3>
