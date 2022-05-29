@@ -26,12 +26,12 @@ const App = () => {
     const word =
       words[category][Math.floor(Math.random() * words[category].length)];
 
-    setPickedWord(word);
-    setPickedCategory(category);
+    return { category, word };
   };
 
   const startGame = () => {
-    pickWordAndCategory();
+    const { category, word } = pickWordAndCategory();
+
     setGameStage(stages[1].name);
   };
 
