@@ -1,5 +1,7 @@
 import "./styles.css";
 
+import { Button } from "../Button";
+
 const GameOver = ({ retry, score }) => {
   return (
     <div>
@@ -7,7 +9,7 @@ const GameOver = ({ retry, score }) => {
       <h2>
         A sua pontuação foi: <span>{score}</span>
       </h2>
-      <button onClick={retry}>Reiniciar jogo</button>
+      <Button onClick={retry}>Reiniciar jogo</Button>
     </div>
   );
 };

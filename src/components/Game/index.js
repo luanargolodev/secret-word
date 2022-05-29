@@ -1,6 +1,8 @@
 import { useState, useRef } from "react";
 import "./styles.css";
 
+import { Button } from "../Button";
+
 const Game = ({
   verifyLetter,
   pickedWord,
@@ -58,7 +60,7 @@ const Game = ({
             onChange={(e) => setLetter(e.target.value)}
             ref={letterInputRef}
           />
-          <button>Jogar!</button>
+          <Button>Jogar!</Button>
         </form>
       </div>
       <div className="wrongLettersContainer">
