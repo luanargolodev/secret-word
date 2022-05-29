@@ -16,6 +16,10 @@ export const WordContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (max-width: 700px) {
+    margin-bottom: 5em;
+  }
 `;
 
 export const Letter = styled.span`
