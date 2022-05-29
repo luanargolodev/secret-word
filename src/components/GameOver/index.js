@@ -1,4 +1,4 @@
-import "./GameOver.css";
+import "./styles.css";
 
 const GameOver = ({ retry, score }) => {
   return (
