@@ -6,7 +6,6 @@ import Game from "./components/Game";
 import GameOver from "./components/GameOver";
 
 import { wordsList } from "./data/words";
-import { scryRenderedDOMComponentsWithTag } from "react-dom/test-utils";
 
 const stages = [
   { id: 1, name: "start" },
