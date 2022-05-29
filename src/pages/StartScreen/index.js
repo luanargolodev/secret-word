@@ -1,13 +1,13 @@
-import "./styles.css";
+import { Instruction } from "./styles";
 
 import { Button } from "../../components/Button";
 import { Title } from "../../components/Title";
 
 const StartScreen = ({ startGame }) => {
   return (
-    <div className="start">
+    <div>
       <Title>Secret Word</Title>
-      <p>Clique no botão abaixo para começar a jogar</p>
+      <Instruction>Clique no botão abaixo para começar a jogar</Instruction>
       <Button onClick={startGame}>Começar o jogo</Button>
     </div>
   );
