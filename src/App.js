@@ -1,10 +1,11 @@
-import React from "react";
 import "./App.css";
+
+import StartScreen from "./components/StartScreen";
 
 const App = () => {
   return (
     <div className="App">
-      <h2>Secret Word</h2>
+      <StartScreen />
     </div>
   );
 };
