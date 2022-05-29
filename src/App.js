@@ -1,6 +1,9 @@
+import { useState } from "react";
 import "./App.css";
 
 import StartScreen from "./components/StartScreen";
+import Game from "./components/Game";
+import GameOver from "./components/GameOver";
 
 const stages = [
   { id: 1, name: "start" },
@@ -9,9 +12,13 @@ const stages = [
 ];
 
 const App = () => {
+  const [gameStage, setGameStage] = useState(stages[0].name);
+
   return (
     <div className="App">
-      <StartScreen />
+      {gameStage === "start" && <StartScreen />}
+      {gameStage === "game" && <Game />}
+      {gameStage === "end" && <GameOver />}
     </div>
   );
 };
