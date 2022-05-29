@@ -5,7 +5,6 @@ import { Button } from "../../components/Button";
 
 const Game = ({
   verifyLetter,
-  pickedWord,
   pickedCategory,
   letters,
   guessedLetters,
