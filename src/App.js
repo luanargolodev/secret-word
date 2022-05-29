@@ -32,6 +32,7 @@ const App = () => {
   const startGame = () => {
     const { category, word } = pickWordAndCategory();
     let wordLetters = word.split("");
+    wordLetters = wordLetters.map((letter) => letter.toLowerCase());
 
     setGameStage(stages[1].name);
   };
