@@ -1,5 +1,13 @@
 import { useState, useRef } from "react";
-import "./styles.css";
+import {
+  Titulo,
+  Score,
+  Tip,
+  WordContainer,
+  Letter,
+  BlankSquare,
+  LetterContainer,
+} from "./styles";
 
 import { Button } from "../../components/Button";
 
@@ -25,29 +33,27 @@ const Game = ({
   };
 
   return (
-    <div className="game">
-      <p className="points">
-        Pontuação: <span>{score}</span>
+    <div>
+      <p>
+        Pontuação: <Score>{score}</Score>
       </p>
-      <h1>Adivinhe a palavra: </h1>
-      <h3 className="tip">
-        Dica sobre a palavra: <span>{pickedCategory}</span>
+      <Titulo>Adivinhe a palavra: </Titulo>
+      <h3>
+        Dica sobre a palavra: <Tip>{pickedCategory}</Tip>
       </h3>
       <p>
         Você ainda tem {guesses} {guesses <= 1 ? "tentativa" : "tentativas"}.
       </p>
-      <div className="wordContainer">
+      <WordContainer>
         {letters.map((letter, index) =>
           guessedLetters.includes(letter) ? (
-            <span key={index} className="letter">
-              {letter}
-            </span>
+            <Letter key={index}>{letter}</Letter>
           ) : (
-            <span key={index} className="blankSquare"></span>
+            <BlankSquare key={index}></BlankSquare>
           )
         )}
-      </div>
-      <div className="letterContainer">
+      </WordContainer>
+      <LetterContainer>
         <p>Tente adivinhar uma letra da palavra: </p>
         <form onSubmit={handleSubmit}>
           <input
@@ -61,7 +67,7 @@ const Game = ({
           />
           <Button>Jogar!</Button>
         </form>
-      </div>
+      </LetterContainer>
       <div className="wrongLettersContainer">
         <p>Letras já utilizadas: </p>
         {wrongLetters.map((letter, index) => (
