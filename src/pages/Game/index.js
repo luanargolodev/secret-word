@@ -6,6 +6,7 @@ import {
   Letter,
   BlankSquare,
   LetterContainer,
+  WrongLettersContainer,
 } from "./styles";
 
 import { Title } from "../../components/Title";
@@ -68,12 +69,12 @@ const Game = ({
           <Button>Jogar!</Button>
         </form>
       </LetterContainer>
-      <div className="wrongLettersContainer">
+      <WrongLettersContainer>
         <p>Letras já utilizadas: </p>
         {wrongLetters.map((letter, index) => (
           <span key={index}>{letter} </span>
         ))}
-      </div>
+      </WrongLettersContainer>
     </div>
   );
 };

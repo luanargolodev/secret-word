@@ -13,6 +13,8 @@ export const WordContainer = styled.div`
   padding: 1.5em;
   border: 20px solid #ecfa00;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 `;
 
@@ -57,4 +59,8 @@ export const LetterContainer = styled.div`
     text-align: center;
     margin-right: 1em;
   }
+`;
+
+export const WrongLettersContainer = styled.div`
+  margin-bottom: 2em;
 `;
