@@ -41,7 +41,7 @@ const App = () => {
 
     setPickedCategory(category);
     setPickedWord(word);
-    setLetters(letters);
+    setLetters(wordLetters);
     setGameStage(stages[1].name);
   };
 
