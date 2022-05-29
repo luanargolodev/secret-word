@@ -45,8 +45,21 @@ const App = () => {
     setGameStage(stages[1].name);
   };
 
-  const verifyLetter = () => {
-    setGameStage(stages[2].name);
+  const verifyLetter = (letter) => {
+    const normalizedLetter = letter.toLowerCase();
+
+    if (
+      guessedLetters.includes(normalizedLetter) ||
+      wrongLetters.includes(normalizedLetter)
+    )
+      return;
+
+    if (letters.includes(normalizedLetter)) {
+      setGuessedLetters([...guessedLetters, normalizedLetter]);
+    } else {
+      setWrongLetters([...wrongLetters, normalizedLetter]);
+      setGuesses(guesses - 1);
+    }
   };
 
   const retry = () => {
